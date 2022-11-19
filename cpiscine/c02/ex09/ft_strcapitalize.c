@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 00:06:48 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/24 00:31:16 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/08 23:54:00 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 char	*ft_strlowcase(char *str)
 {

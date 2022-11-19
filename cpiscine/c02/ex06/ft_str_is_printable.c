@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 22:46:39 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/23 23:35:38 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/08 23:53:45 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 int	ft_str_is_printable(char *str)
 {

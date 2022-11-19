@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 15:25:35 by tanota            #+#    #+#             */
-/*   Updated: 2022/10/03 23:40:56 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/09 14:45:29 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,66 +17,61 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 		i++;
 	return (i);
 }
 
-int	ft_ultimate_str(char **str, int size)
+int	get_malloc_size(int size, char **strs, char *sep)
 {
 	int	i;
 	int	res;
 
+	if (size == 0)
+		return (1);
 	i = 0;
 	res = 0;
 	while (i < size)
-	{
-		res += ft_strlen(str[i]);
-		i++;
-	}
-	return (res);
+		res += ft_strlen(strs[i++]);
+	res += ft_strlen(sep) * (size - 1);
+	return (res + 1);
 }
 
 char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
-	int	dest_len;
+	int	destlen;
 
 	i = 0;
-	dest_len = ft_strlen(dest);
-	while (src[i] != '\0')
+	destlen = ft_strlen(dest);
+	while (src[i])
 	{
-		dest[dest_len + i] = src[i];
+		dest[destlen + i] = src[i];
 		i++;
 	}
-	dest[dest_len + i] = '\0';
+	dest[destlen + i] = 0;
 	return (dest);
 }
 
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	char	*tab;
+	char	*res;
 	int		i;
 
-	i = 1;
-	tab = malloc((ft_ultimate_str(strs, size) + (size - 1)
-				* ft_strlen(sep) + 1) * sizeof(char));
-	if (!tab)
-		return (0);
+	res = malloc(get_malloc_size(size, strs, sep) * sizeof(char));
+	if (!res)
+		return (NULL);
+	res[0] = 0;
+	if (size == 0)
+		return (res);
+	i = 0;
 	while (i < size)
 	{
-		ft_strcat(tab, strs[i]);
+		ft_strcat(res, strs[i]);
 		if (i != size - 1)
-			ft_strcat(tab, sep);
+			ft_strcat(res, sep);
 		i++;
 	}
-	tab[ft_ultimate_str(strs, size) + (size - 1) * ft_strlen(sep) + 1] = '\0';
-	return (tab);
+	res[ft_strlen(res)] = 0;
+	return (res);
 }
-
-/*#include <stdio.h>
-
-int	main(int argc, char **argv)
-{
-	printf("%s\n",  ft_strjoin(argc, argv, "___"));
-}*/

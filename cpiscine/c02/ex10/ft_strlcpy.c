@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 21:32:39 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/24 22:51:58 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/08 23:54:03 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {

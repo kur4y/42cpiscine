@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 22:58:28 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/21 23:30:57 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/08 23:53:52 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 char	*ft_strupcase(char *str)
 {

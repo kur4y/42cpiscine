@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:55:57 by tanota            #+#    #+#             */
-/*   Updated: 2022/10/03 15:16:09 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/09 14:37:18 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 int	ft_strlen(char *s)
 {
@@ -41,18 +39,3 @@ char	*ft_strdup(char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
-/*int	main(int argc, char **argv)
-{
-	int	i;
-
-	i = 1;
-	while (i != argc)
-	{
-		ft_strdup(argv[i]);
-		write (1, ft_strdup(argv[i]), ft_strlen(argv[i]));
-		write (1, "\n", 1);
-		i++;
-	}
-	return (0);
-}*/

@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 22:41:29 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/28 13:23:26 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/09 13:52:20 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -39,17 +38,3 @@ void	ft_putnbr(int nb)
 	else
 		ft_putchar(nb + '0');
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	ft_putnbr(42);
-	printf("\n");
-	ft_putnbr(-42);
-	printf("\n");
-	ft_putnbr(-2147483648);
-	printf("\n");
-	ft_putnbr(2147483647);
-	printf("\n");
-}*/

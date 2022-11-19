@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 19:55:55 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/22 19:39:03 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/08 23:53:37 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 int	ft_str_is_numeric(char *str)
 {

@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 21:59:54 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/23 23:27:33 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/08 23:53:40 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 int	ft_str_is_lowercase(char *str)
 {

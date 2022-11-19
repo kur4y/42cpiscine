@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 18:36:37 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/21 12:45:51 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/08 23:53:24 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {

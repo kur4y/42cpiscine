@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 21:39:55 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/27 22:49:21 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/09 13:33:54 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -37,21 +36,10 @@ void	ft_putstr_non_printable(char *str)
 			ft_putchar(str[i]);
 		else
 		{
-			ft_putchar('\\');	
+			ft_putchar('\\');
 			ft_putchar("0123456789abcedef"[str[i] / 16]);
 			ft_putchar("0123456789abcedef"[str[i] % 16]);
 		}
 		i++;
 	}
-
 }
-
-
-/*int	main()
-{
-	ft_putstr_non_printable("Coucou\ntu vas bien");
-	ft_putchar('\n');
-	ft_putstr_non_printable("Coucou tu vas bie\t\v\0n");
-	ft_putchar('\n');
-	ft_putstr_non_printable("");
-}*/

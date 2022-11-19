@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tanota <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tanota <tanota@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 20:10:26 by tanota            #+#    #+#             */
-/*   Updated: 2022/09/28 13:20:19 by tanota           ###   ########.fr       */
+/*   Updated: 2022/11/09 13:52:12 by tanota           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -29,13 +28,3 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char s1[] = "Suc";
-	char s2[] = "cess\n";
-	ft_putstr(s1);
-	ft_putstr(s2);
-}*/
